@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/menu_sermons"
+            android:icon="@drawable/ic_sermons_dark"
+            android:title="@string/menu_title_sermons"
+        />
+        <item
+            android:id="@+id/menu_projects"
+            android:icon="@drawable/ic_projects_dark"
+            android:title="@string/menu_title_projects"
+        />
+        <item
+            android:id="@+id/menu_events"
+            android:icon="@drawable/ic_events_dark"
+            android:title="@string/menu_title_events"
+        />
+        <item
+            android:id="@+id/menu_requests"
+            android:icon="@drawable/ic_requests_dark"
+            android:title="@string/menu_title_requests"
+        />
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings_dark"
+            android:title="@string/menu_title_settings"
+        />
+</menu>

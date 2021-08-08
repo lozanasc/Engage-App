@@ -1,0 +1,48 @@
+.Container {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.Header {
+    display: flex;
+    min-height: 15%;
+    max-height: 15%;
+    min-width: 100%;
+    background-color: var(--gray);
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.Header > .Logo {
+    display: flex;
+    margin: auto; 
+    padding: 0;   
+    height: 25px;
+    width: 100px;
+}
+img {
+    margin: auto;
+    padding: 0;
+    height: 35px;
+    width: 100px;
+}
+
+.Header > .LinkGroup {
+    display: flex;
+    margin: auto auto;
+}
+.LinkGroup > a {
+    margin: auto 25px;
+    text-decoration: none;
+    font-family: var(--accent);
+    color: var(--base);
+}
+
+.LinkGroup > a:hover {
+    text-decoration: underline;
+    filter: drop-shadow(0 2px 0.15rem rgba(0, 0, 0, 0.459));
+}

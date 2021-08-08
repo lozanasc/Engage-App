@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>API Documentation</title>
+</head>
+<body>
+    <div class="main">
+        <div class="common navPanel">
+            <div class="contentContainer">
+                <img src="../assets/fvoz_doc_header_logo.png" alt="" class="logo">
+                <h3>
+                    API Documentation
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#users">
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#admin">
+                            Admin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#facebook">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#youtube">
+                            Youtube
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#request">
+                            Nodemailer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="common contentPanel">
+            <div class="contentContainer">
+                <span style="color: red; font-family: var(--header);"> [This page has no mobile support at the moment] </span>
+                <h1>
+                    FVOZ Engage API Documentation
+                </h1>
+                <h3>
+                    <u>
+                        What is FVOZ Engage?
+                    </u>
+                </h3>
+                <p>
+                    Fellowship of the Voice of Zion Inc. App-Based Church Management System is a system that 
+                    aids the church organization in managing, automating and organizing daily operations. It handles processes 
+                    such as databases, communication, community and event and worship presentation programs, among many 
+                    others. This is an app-based for the user like the district pastors and members of the church. The holder or 
+                    the admin of this system which is the Fellowship of the Zion Headquarters Church will have a Web-based 
+                    feature. It is free and downloadable through online, users won’t need to spend money to use it, they only 
+                    need data or internet connection.
+                </p>
+                <h3>
+                    <u>
+                        FVOZ Engage Application Architecture
+                    </u>
+                </h3>
+                <img src="../assets/fvoz_engage_app_architecture.png" alt="" class="app_architecture">
+                <h3 id="users">
+                    <u>
+                        Users
+                    </u>
+                </h3>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/user/auth
+                    </span>
+                    <br> 
+                    > sends email and password in JSON format as payload and returns user information in JSON format 
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/user/register
+                    </span>
+                    <br> 
+                    > sends email, full name and password in JSON format as payload and returns result in JSON format
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/user/change_email
+                    </span>
+                    <br> 
+                    > This is a  protected endpoint, sends old email and new email in JSON format as payload and returns result in JSON format.
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/user/change_name
+                    </span>
+                    <br> 
+                    > This is a  protected endpoint, sends old name and new name in JSON format as payload and returns result in JSON format.
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/user/change_password
+                    </span>
+                    <br> 
+                    > This is a  protected endpoint, sends old passsword and new password in JSON format as payload and returns result in JSON format.
+                </p>
+                <h3 id="admin">
+                    <u>
+                        Admin
+                    </u>
+                </h3>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/admin/auth
+                    </span>
+                    <br> 
+                    > sends email and password in JSON format as payload and returns user information in JSON format 
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/admin/register
+                    </span>
+                    <br> 
+                    > sends email, full name and password in JSON format as payload and returns result in JSON format
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/admin/change_email
+                    </span>
+                    <br> 
+                    > This is a  protected endpoint, sends old email and new email in JSON format as payload and returns result in JSON format.
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/admin/change_name
+                    </span>
+                    <br> 
+                    > This is a  protected endpoint, sends old name and new name in JSON format as payload and returns result in JSON format.
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/db_api/v1/admin/change_password
+                    </span>
+                    <br> 
+                    > This is a  protected endpoint, sends old passsword and new password in JSON format as payload and returns result in JSON format.
+                </p>
+                <h3 id="facebook">
+                    <u>
+                        Facebook
+                    </u>
+                </h3>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--get); font-weight: bold;"> GET </span>  /engage/fb_api/v1/events/posts
+                    </span>
+                    <br> 
+                    > Uses facebook’s graph api to grab feed data from a particular page returns data in JSON format
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--get); font-weight: bold;"> GET </span>  /engage/fb_api/v1/events/events
+                    </span>
+                    <br> 
+                    > Uses facebook’s graph api to grab events data from a particular page returns data in JSON format
+                </p>
+                <h3 id="youtube">
+                    <u>
+                        Youtube
+                    </u>
+                </h3>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--get); font-weight: bold;"> GET </span> /engage/yt_api/v1/sermon/sermons 
+                    </span>
+                    <br> 
+                    > Uses <a href="https://github.com/TimeForANinja/node-ytpl#readme" target="_blank">ytpl</a> to grab playlist from a public YouTube playlist in JSON format
+                </p>
+                <h3 id="request">
+                    <u>
+                        Nodemailer
+                    </u>
+                </h3>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/mail_api/v1/request/mail
+                    </span>
+                    <br> 
+                    > Sends subject and message in JSON format as a payload and returns the request result in JSON format
+                </p>
+                <h3 id="projects">
+                    <u>
+                        Projects
+                    </u>
+                </h3>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--get); font-weight: bold;"> GET </span> /engage/project/v1/projects/list
+                    </span>
+                    <br> 
+                    > Grabs the list of projects by name in the Database in a JSON format
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/project/v1/projects/new
+                    </span>
+                    <br> 
+                    > Sends name and description in JSON as payload and returns the request result in JSON format
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/project/v1/projects/edit
+                    </span>
+                    <br> 
+                    > Sends id, name, description, status in JSON as payload and returns the request result in JSON format
+                </p>
+                <p>
+                    <span class="endpoint">
+                       <span style="color: var(--post); font-weight: bold;"> POST </span> /engage/project/v1/projects/delete
+                    </span>
+                    <br> 
+                    > Sends id in JSON as payload and returns the request result in JSON format
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

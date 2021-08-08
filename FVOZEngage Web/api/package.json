@@ -1,0 +1,33 @@
+{
+  "name": "fvozengagedatabase",
+  "version": "1.0.0",
+  "description": "API server for FVOZ Engage app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev_start": "concurrently \"nodemon index.js\" \"cd admin-client && npm start\"",
+    "start": "nodemon index.js"
+  },
+  "author": "Sean Christian Lozana",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.6.2",
+    "request": "^2.88.2",
+    "ytdl-core": "^4.8.3",
+    "ytpl": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@700&family=Proza+Libre&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --lightBlue: #30BCED;
+  --gray: #303036;
+  --base: #FFFAFF;
+  --orange: #FC5130;
+  --black: #050401;
+  /* fonts */
+  --header: 'Montserrat', sans-serif;
+  --accent: 'Cairo', sans-serif;
+  --body: 'Proza Libre', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+}

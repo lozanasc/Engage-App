@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash.SplashScreen">
+
+    <ImageView
+        android:id="@+id/SplashBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/splash_bg_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_background" />
+
+    <ImageView
+        android:id="@+id/FVOZEngageSplashLogo"
+        android:layout_width="187dp"
+        android:layout_height="84dp"
+        android:contentDescription="@string/splash_logo_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SplashBackground"
+        app:layout_constraintStart_toStartOf="@+id/SplashBackground"
+        app:layout_constraintTop_toTopOf="@+id/SplashBackground"
+        app:srcCompat="@drawable/engage_splash_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

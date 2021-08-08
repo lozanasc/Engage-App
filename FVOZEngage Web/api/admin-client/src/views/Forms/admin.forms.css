@@ -1,0 +1,77 @@
+.LoginSize {
+    min-height: 350px;
+    max-height: 350px;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.RegistrationSize {
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.FormContainer {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.Logo {
+    min-height: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    margin: auto;
+    filter: drop-shadow(0 2px 0.15rem rgba(0, 0, 0, 0.356));
+}
+
+.Bg {
+    background-image: url('../../assets/background.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.Inner {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--base);
+    filter: drop-shadow(0 2px 0.15rem rgba(0, 0, 0, 0.356));
+}
+
+.Form {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+label {
+    font-family: var(--accent);
+    margin: 5px auto;
+}
+input {
+    height: 35px;
+    width: 200px;
+    border-radius: 3px black;
+    margin: 5px auto;
+}
+button {
+    height: 35px;
+    width: 200px;
+    background-color: var(--gray);
+    font-family: var(--header);
+    color: var(--base);
+    border: none;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: ease-in-out 1s;
+    filter: drop-shadow(0 2px 0.15rem rgba(0, 0, 0, 0.356));   
+}

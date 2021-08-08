@@ -1,0 +1,217 @@
+.DashboardContainer {
+    display: flex;
+    max-height: 85vh;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.MenuBg {
+    background-position: center;
+    background-size: auto;
+    background-image: url('../../../assets/menu_background.png');
+}
+
+.UsersBg {
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../../assets/users_background.png');
+}
+
+.ProjectBg {
+    background-position: center;
+    background-size: auto;
+    background-image: url('../../../assets/projects_background.png');
+}
+
+.SettingBg {
+    background-position: center;
+    background-size: auto;
+    background-image: url('../../../assets/settings_background.png');
+}
+
+.Menu {
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+
+h1 {
+    font-family: var(--header);
+    margin: auto;
+}
+
+h2 {
+    font-family: var(--accent);
+    margin: auto;
+}
+
+h3 {
+    font-family: var(--body);
+    margin: auto;
+}
+
+p {
+    font-family: var(--body);
+    margin: 2px auto;
+    cursor: pointer;
+}
+p:hover{
+    filter: drop-shadow(0 2px 0.15rem rgba(0, 0, 0, 0.418));
+}
+
+a {
+    font-family: var(--body);
+    margin: auto;
+    font-size: large;
+    text-decoration: none;
+    color: var(--black);
+}
+
+span {
+    font-family: var(--accent);
+}
+
+.Delete {
+    background-color: var(--orange);
+}
+.NewProject {
+    background-color: var(--lightBlue);
+    width: 100%;
+    margin: auto;
+}
+
+.LeftPanel {
+    display: flex;
+    flex-flow: column;
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 85vh;
+    max-height: inherit;
+    padding: 10px;
+    margin: auto;
+}
+
+.RightPanel {
+    display: flex;
+    flex-flow: column;
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 85vh;
+    max-height: inherit;
+    padding: 10px;
+    margin: auto;
+    color: var(--base);
+    overflow-x: auto;
+}
+
+.Welcome {
+    margin: auto;
+}
+
+.ListContainer {
+    margin: auto;
+    min-width: 70%;
+    max-width: 70%;
+}
+
+.List {
+    margin: auto;
+    min-height: 280px;
+    max-height: 250px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.UserInfoContainer {
+    padding: 10px;
+    margin: auto;
+}
+
+.UserInfoContainer > * {
+    margin: 20px auto;
+}
+
+.ProjectInfoContainer {
+    padding: 10px;
+    margin: auto;
+}
+
+.ProjectInfoContainer > * {
+    margin: 25px auto;
+}
+.ProjectInfoContainer > .Delete {
+    width: 100%;
+}
+.NewProjectForm {
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+.NewProjectForm > button {
+    width: 100%;
+    background-color: var(--orange);
+}
+.InputName > input {
+    width: 100%;
+}
+.InputDesc > input {
+    text-align: start;
+    height: 150px;
+    width: 100%;
+}
+
+.InfoPanel {
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+}
+
+.InfoPanel > p{
+    margin: auto 0 2px 0;
+    background-color: var(--base);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.InfoPanel > h1 {
+    color: var(--base);
+}
+
+.InfoPanel > * {
+    color: var(--gray);
+    text-align: start;
+}
+
+.SettingSeparate {
+    justify-content: space-between;
+}
+
+.Edit {
+    background-color: var(--lightBlue);
+}
+
+.Thumbnail {
+    height: 200px;
+    width: 400px;
+    margin: auto;
+}
+
+.Profile {
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--base);
+    border-radius: 9999px;
+    margin: 20px auto;
+    filter: drop-shadow(0 4px 0.20rem rgba(0, 0, 0, 0.507));
+}
+
+.ButtonGroup {
+    display: flex;
+}
+.ButtonGroup > button {
+    margin: auto 2px;
+}

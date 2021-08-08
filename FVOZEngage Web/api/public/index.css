@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+:root {
+    --base: #FFFAFF;
+    --main: #303036;
+    --post: #FC5130;
+    --get: #30BCED;
+    --header: 'Montserrat', sans-serif;  
+    --pg: 'Cairo', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.common {
+    display: flex;
+    flex-flow: column;
+}
+
+.main {
+    display: flex;
+    flex-flow: row;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.navPanel{
+    background-color: var(--main);
+    min-height: 100vh;
+    min-width: 20%;
+    padding: 10px;
+    margin: auto;
+}
+.navPanel > .contentContainer { 
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+.navPanel > .contentContainer > h3 {
+    font-family: var(--header);
+    color: white;
+    margin: 5px auto;
+}
+.navPanel > .contentContainer > ul {    
+    list-style-type: none;
+    font-family: var(--header);
+}
+.navPanel > .contentContainer > ul > li {
+    margin: 15px 0;
+}
+.navPanel > .contentContainer > ul > li > a {
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    height: 80px;
+    width: 160px;
+    margin: auto;
+}
+
+.contentPanel{
+    background-color: var(--base);
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 80%;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.contentPanel > .contentContainer {
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 35px;
+}
+.contentPanel > .contentContainer > h1 {
+    font-family: var(--header);
+}
+.contentPanel > .contentContainer > h3, p {
+    font-family: var(--pg);
+    margin: 2px 2px;
+}
+.contentPanel > .contentContainer > .app_architecture {
+    margin: auto;
+    height: 75%;
+    width: 75%;
+}
