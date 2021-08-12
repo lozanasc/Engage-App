@@ -24,7 +24,7 @@ need data or internet connection.
   <tr/>
   <tr>
     <td>
-      <a href="https://github.com/lozanasc-projects/CSLounge/tree/main/kavis">FVOZ Engage Web</a>
+      <a href="https://github.com/lozanasc/Engage-App/tree/main/FVOZEngage%20App">FVOZ Engage Web</a>
     </td>
     <td>
       Web
@@ -35,7 +35,7 @@ need data or internet connection.
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/lozanasc-projects/CSLounge/tree/main/yevis">FVOZ Engage App</a>
+      <a href="https://github.com/lozanasc/Engage-App/tree/main/FVOZEngage%20Web">FVOZ Engage App</a>
     </td>
     <td>
       Android
